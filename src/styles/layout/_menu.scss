@@ -1,0 +1,15 @@
+/* MENU */
+
+.menu {
+  &__list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2em;
+  }
+
+  &__link.active {
+    color: var(--blue);
+    text-decoration: none;
+  }
+}

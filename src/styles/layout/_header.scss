@@ -1,0 +1,26 @@
+/* HEADER */
+.header {
+  position: relative;
+  padding: 1em;
+}
+
+.header .header__title {
+  font-size: 36px;
+  color: var(--blue);
+  width: 50vw;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  border-bottom: dotted 1px var(--darkblue);
+}
+
+@media all and (max-width: 996px) {
+  .header .header__title {
+    width: 100%;
+  }
+}
+
+.header .header__logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }

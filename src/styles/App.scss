@@ -1,0 +1,54 @@
+@use './core/reset';
+@use './core/variables';
+@use './layout/page';
+@use './layout/header';
+@use './layout/menu';
+
+.darkmode .clock {
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  border: solid 5px #AAA;
+  border-radius: 20px;
+  padding: 0 5px;
+}
+
+.darkmode .clock__number {
+  display: inline-block;
+  margin: 5px 10px;
+  border: solid 2px #555;
+  border-radius: 10px;
+  background-color: #2A2A2A;
+  font-size: 40px;
+  position: relative;
+}
+
+.darkmode .clock__number::after {
+  content: ':';
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: -1ch;
+}
+
+.darkmode .clock__number:first-of-type:after {
+  content: '';
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+}
+
+button {
+  background-color: var(--background);
+  padding: .25em;
+  border: solid 2px var(--blue);
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.danger {
+  color: salmon;
+}
